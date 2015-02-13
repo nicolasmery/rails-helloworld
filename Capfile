@@ -11,7 +11,7 @@ require 'capistrano-nc/nc'
 # Ruby
 require 'capistrano/rbenv'
 require 'capistrano/bundler'
-require 'capistrano/rails/assets'
+#require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
 # Node
@@ -26,11 +26,13 @@ require 'capistrano3/unicorn'
 
 # Tools
 #require 'capistrano/delayed-job'
-require 'whenever/capistrano'
+#require 'whenever/capistrano'
 
 # NEGROKU
 # Includes negroku defaults and tasks
 require 'negroku/deploy'
+require 'negroku/unicorn'
+#require 'negroku/eye'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
