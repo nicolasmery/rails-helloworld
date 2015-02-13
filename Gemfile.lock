@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/platanus/negroku.git
-  revision: aba7c8f3803c57a80fe90a9fc939fef116611f94
-  branch: 67-add-eye-support
+PATH
+  remote: /home/surbtc/negroku
   specs:
     negroku (2.0.0.pre3)
       capistrano (~> 3.3.5)
@@ -84,6 +82,11 @@ GEM
       capistrano (>= 3.0.0)
     capistrano3-unicorn (0.2.1)
       capistrano (~> 3.1, >= 3.1.0)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    celluloid-io (0.15.0)
+      celluloid (>= 0.15.0)
+      nio4r (>= 0.5.0)
     chronic (0.10.2)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -100,6 +103,12 @@ GEM
       delayed_job (>= 3.0, < 4.1)
     erubis (2.7.0)
     execjs (2.3.0)
+    eye (0.6.4)
+      celluloid (~> 0.15.0)
+      celluloid-io (~> 0.15.0)
+      sigar (~> 0.7.2)
+      state_machine
+      thor
     gli (2.12.2)
     hike (1.2.3)
     i18n (0.7.0)
@@ -121,6 +130,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
+    nio4r (1.1.0)
     polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
@@ -154,6 +164,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    sigar (0.7.3)
     sprockets (2.1.4)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -163,6 +174,7 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    state_machine (1.2.0)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
     terminal-notifier (1.6.2)
@@ -171,6 +183,7 @@ GEM
       ref
     thor (0.14.6)
     tilt (1.4.1)
+    timers (1.1.0)
     tins (1.3.4)
     treetop (1.4.15)
       polyglot
@@ -192,6 +205,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
+  eye
   jquery-rails
   negroku!
   rails (= 3.2.3)

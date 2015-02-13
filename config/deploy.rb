@@ -19,12 +19,13 @@
 set :application,   'rails-helloworld'
 set :repo_url,      'git@github.com:nicolasmery/rails-helloworld.git'
 set :deploy_to,     "/home/deploy/applications/#{fetch(:application)}"
+set :shared_path,   fetch(:deploy_to) + '/shared'
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []) + %w{}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, fetch(:linked_dirs, []) + %w{bin log tmp/pids tmp/cache tmp/sockets public/system}
+#set :linked_dirs, fetch(:linked_dirs, []) + %w{bin log tmp/pids tmp/cache tmp/sockets public/system}
 
 ######################
 # Unicorn

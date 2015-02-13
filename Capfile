@@ -30,9 +30,13 @@ require 'capistrano3/unicorn'
 
 # NEGROKU
 # Includes negroku defaults and tasks
+
+#IMPORTANT negroku eye, etc hast to be loaded BEFORE negroku/deploy
+
+require 'negroku/eye'
 require 'negroku/deploy'
-require 'negroku/unicorn'
-#require 'negroku/eye'
+
+#require 'negroku/unicorn'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
