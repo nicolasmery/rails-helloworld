@@ -15,17 +15,17 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
 # Node
-require 'capistrano/nodenv'
-require 'capistrano/bower'
+#require 'capistrano/nodenv'
+#require 'capistrano/bower'
 
 # App server
 require 'capistrano3/unicorn'
 
 # Static server
-require 'capistrano/nginx'
+#require 'capistrano/nginx'
 
 # Tools
-require 'capistrano/delayed-job'
+#require 'capistrano/delayed-job'
 require 'whenever/capistrano'
 
 # NEGROKU

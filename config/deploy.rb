@@ -35,6 +35,6 @@ set :deploy_to,     "/home/deploy/applications/#{fetch(:application)}"
 # https://github.com/platanus/negroku/blob/master/lib/negroku/deploy/unicorn.rb
 # This are some example you might want to change that will not brake anything
 
- set :unicorn_template_type, "rails_activerecord"
+# set :unicorn_template_type, "rails_activerecord"
  set :unicorn_workers, 1
- set :unicorn_workers_timeout, 30
+# set :unicorn_workers_timeout, 30
