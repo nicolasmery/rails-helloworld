@@ -10,4 +10,4 @@ set :nginx_domains, 'hello.kross.platan.us'
 set :branch,        'master'    # Optional, defaults to master
 
 # Rails configuration
-# set :rails_env,   'production'
+set :rails_env,   'production'
