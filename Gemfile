@@ -19,7 +19,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'negroku', :git => 'https://github.com/platanus/negroku.git', :branch => '67-add-eye-support'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
