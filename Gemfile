@@ -12,8 +12,6 @@ gem 'unicorn'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  #gem 'negroku', :git => 'https://github.com/platanus/negroku.git', :branch => '67-add-eye-support'
-  gem 'negroku', :path => '/home/surbtc/negroku'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -22,6 +20,12 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+group :development do 
+  #gem 'negroku', :git => 'https://github.com/platanus/negroku.git', :branch => '67-add-eye-support'
+  gem 'negroku', :path => '/home/surbtc/negroku'
+end
+
 gem 'jquery-rails'
 gem 'eye'
 # To use ActiveModel has_secure_password
